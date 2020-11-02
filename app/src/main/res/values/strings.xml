@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Formulario de Contacto</string>
+    <string name="txt_btnSiguiente">Enviar</string>
+    <string name="txt_btnPrueba">Probar</string>
+    <string name="txt_btnFin">Fin</string>
+    <string name="txt_btnEditar">Editar</string>
+    <string name="txt_nombre">Nombre Completo</string>
+    <string name="edtFecha">Fecha Nacimiento </string>
+</resources>

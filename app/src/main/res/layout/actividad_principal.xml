@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.valverdesistemas.formcontactb.ActividadPrincipal">
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete sus datos:"
+        android:id="@+id/tituloFormulario"
+        android:layout_alignTop="@id/tituloFormulario"
+        android:layout_marginTop="26dp"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTxtNombre"
+        android:hint="@string/txt_nombre"/>
+    <!--android.support..design -->
+    <!--EditText
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:hint="Fecha"
+        android:inputType="date"
+        /-->
+    <!--DatePicker
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:datePickerMode="calendar"
+        android:calendarViewShown="false"
+        android:layout_marginTop="0dp" /-->
+    <!--- android:layout_marginLeft="16dp" -->
+    <EditText
+        android:id="@+id/edtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtFecha"
+        android:layout_marginLeft="12dp"
+        android:text="Seleccionar Fecha" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:hint="Telefono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:hint="Descripcion"
+        android:inputType="textLongMessage" />
+
+
+    <Button
+        android:id="@+id/btnProbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_centerHorizontal="true"
+        android:onClick="evento"
+        android:text="@string/txt_btnPrueba"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_centerHorizontal="true"
+        android:onClick="evento"
+        android:text="@string/txt_btnSiguiente"/>
+    <Button
+        android:id="@+id/btnFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_centerHorizontal="true"
+        android:onClick="evento"
+        android:text="@string/txt_btnFin"/>
+    <TextView
+        android:id="@+id/etiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido: " />
+
+</LinearLayout>
+</RelativeLayout>
